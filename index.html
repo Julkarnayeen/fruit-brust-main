@@ -3,19 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fruit-brust-main</title>
+    <title>fruit-brust-main </title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <style>
+      *{
+        font-family: 'Lato', sans-serif;
+      }
 
-
-  </style>
+    </style>
 </head>
-<body>
+<body class="font-family">
     <!-- HEADER AREA START -->
         <!-- NAV BAR AREA -->
-        <div class="mx-20">
-          <div class="navbar bg-red-600 rounded-lg justify-around ">
+        <div class="mx-20 pt-5">
+          <div class="navbar bg-red-600 rounded-full justify-around">
             <div class="navbar-start">
               <div class="dropdown">
                 <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -60,17 +66,17 @@
               <div class="max-w-md">
                 <h1 class="mb-5 text-5xl font-bold">Exotic tastes at <br> your doorstep</h1>
                 <p class="mb-5">We supply highly quality organic products.</p>
-                <button class="btn btn-primary">Shop Now</button>
+                <button class="bg-red-700 hover:bg-red-400 text-white font-bold py-2 px-4 rounded">Shop Now</button>
               </div>
             </div>
           </div>
         </div>
         <div class="relative flex justify-around mx-40 -mt-20 bg-white rounded-lg items-center  ">
-          <div ><img src="./images/fruit1.png" alt=""><p>Strawberry</p></div>
-          <div ><img src="./images/fruit2.png" alt=""><p>Orange</p></div>
-          <div ><img src="./images/fruit3.png" alt=""><p>Mango</p></div>
-          <div ><img src="./images/fruit4.png" alt=""><p>Strawberry</p></div>
-          <div ><img src="./images/fruit5.png" alt=""><p>Mango</p></div>
+          <div ><img src="./images/fruit1.png" alt=""><p class="text-center">Strawberry</p></div>
+          <div ><img src="./images/fruit2.png" alt=""><p class="text-center">Orange</p></div>
+          <div ><img src="./images/fruit3.png" alt=""><p class="text-center">Mango</p></div>
+          <div ><img src="./images/fruit4.png" alt=""><p class="text-center">Strawberry</p></div>
+          <div ><img src="./images/fruit5.png" alt=""><p class="text-center">Mango</p></div>
         </div>
 
         <!-- DEAL OF THE DAY -->
@@ -125,7 +131,8 @@
                 <h2 class="card-title">Apple</h2>
                 <img class="my-2" src="./images/5star.png" alt="">
                 <div class="card-actions">
-                  <button class="btn btn-ghost">Details</button>
+                  <button class="btn btn-ghost"><a href="">Details</a></button>
+                  
                 </div>
               </div>
             </div>
@@ -178,8 +185,8 @@
         </div>
         <!-- SHOP ALL BTN -->
         <div class="flex justify-center items-center my-20">
-          <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
-              Shop ALL
+          <button class="bg-red-700 hover:bg-red-400 text-white font-bold py-2 px-4 rounded">
+              Shop All
           </button>
       </div>
       <!-- Meet The Team Section -->
@@ -256,7 +263,7 @@
         </div>
       </div>
       <!-- Why Choose Us -->
-      <div class="hero py-20">
+      <div class="hero py-5">
         <div class="text-center">
           <div class="max-w-md">
             <h1 class="text-5xl font-bold">Why Choose Us</h1>
@@ -265,34 +272,67 @@
         </div>
       </div>
       <!-- Why Choose Us Section -->
-      <div class="bg-red-700">
-
+      <div class="flex justify-center gap-10 py-5">
+        <div>
+            <div class="flex justify-start items-center gap-8 mb-4">
+              <div><img class="" src="./icon/group 1.png" alt=""></div>
+              <div><h1 class="text-2xl font-bold">Dedicated Team</h1><hr><hr><hr><p>Professional employees are there for you to pick<br>the most amazing and fresh fruits.</p></div>
+          </div>
+          <div class="flex justify-start items-center gap-8 mb-4">
+            <div><img class="" src="./icon/love 1.png" alt=""></div>
+            <div><h1 class="text-2xl font-bold">Fresh is Best</h1><hr><hr><hr><p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p></div>
+          </div>
+          <div class="flex justify-start items-center gap-8">
+          <div><img class="" src="./icon/group 1.png" alt=""></div>
+          <div><h1 class="text-2xl font-bold">Gift Certificates</h1><hr><hr><hr><p>Professional employees are there for you to pick<br>the most amazing and fresh fruits.</p></div>
+          </div>
+          </div>
+          <div>
+              <img class="w-80 h-80" src="./images/whychoose1.png" alt="">
+          </div>
+          <div>
+            <div>
+              <div class="flex justify-start items-center gap-8 mb-4">
+                <div><h1 class="text-2xl font-bold">Dedicated Team</h1><hr><hr><hr><p>Professional employees are there for you to pick<br>the most amazing and fresh fruits.</p></div>
+                <div><img class="" src="./icon/fruit 1.png" alt=""></div>
+            </div>
+            <div class="flex justify-start items-center gap-8 mb-4">
+              <div><h1 class="text-2xl font-bold">Fresh is Best</h1><hr><hr><hr><p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p></div>
+              <div><img class="" src="./icon/ice-cream 1.png" alt=""></div>
+            </div>
+            <div class="flex justify-start items-center gap-8">
+              <div><h1 class="text-2xl font-bold">Gift Certificates</h1><hr><hr><hr><p>Professional employees are there for you to pick<br>the most amazing and fresh fruits.</p></div>
+            <div><img class="" src="./icon/like 1.png" alt=""></div>
+            </div>
+            </div>
+          </div>
       </div>
 <!-- MAIN AREA END -->
     <!-- FOOTER AREA START -->
     <footer>
-        <div class="bg-black text-white w-full">
-            <div class="flex justify-center items-center gap-5 pt-5">
-                <img src="./images/logo.png" alt="logo"><h1><span class="logo-g"><h1 class="text-4xl">FruitBurst</h1>
-            </div>
-            <div class="flex justify-center items-center gap-10 mt-10">
-                <div class="">Home</div>
-                <div class="">About Us</div>
-                <div class="">Shop Now</div>
-                <div class="">All Fruits</div>
-                <div class="">support</div>
-                <div class="">My Account</div>
-            </div>
-            <div class="flex justify-center item-center gap-10 mt-10">
-                <img src="./socia-icon/apple 1.png" alt="">
-                <img src="./socia-icon/facebook 1.png" alt="">
-                <img src="./socia-icon/instagram 1.png" alt="">
-                <img src="./socia-icon/linkedin 1.png" alt="">
-                <img src="./socia-icon/twitter 1.png" alt="">
-                <img src="./socia-icon/tik-tok 1.png" alt="">
-            </div>
-            <div class="flex justify-center items-center mt-10"><h5>Fruit Burst @ Julkar Nayeen Zakaria Haider @ 2000-2023</h5>
+      <div class="bg-black text-white max-w-full">
+        <div class="flex justify-center items-center gap-5 pt-5">
+            <img src="./images/logo.png" alt="logo"><h1><span class="logo-g"><h1 class="text-4xl">FruitBurst</h1>
         </div>
+        <div class="flex justify-center items-center gap-10 mt-10">
+            <div class="">Home</div>
+            <div class="">About Us</div>
+            <div class="">Shop Now</div>
+            <div class="">All Fruits</div>
+            <div class="">support</div>
+            <div class="">My Account</div>
+        </div>
+        <div class="flex justify-center item-center gap-10 mt-10">
+            <img src="./socia-icon/apple 1.png" alt="">
+            <img src="./socia-icon/facebook 1.png" alt="">
+            <img src="./socia-icon/instagram 1.png" alt="">
+            <img src="./socia-icon/linkedin 1.png" alt="">
+            <img src="./socia-icon/twitter 1.png" alt="">
+            <img src="./socia-icon/tik-tok 1.png" alt="">
+        </div>
+        <div class="flex justify-center items-center mt-10"><h5>Fruit Burst @ Julkar Nayeen Zakaria Haider @ 2000-2023</h5>
+    </div>
+  </div>
     </footer>
     <!-- FOOTER AREA END -->
 </body>
