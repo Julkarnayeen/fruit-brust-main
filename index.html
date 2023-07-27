@@ -4,8 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fruit-brust-main</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+
+
+  </style>
 </head>
 <body>
-    <h1>Hello</h1>
+    <!-- HEADER AREA START -->
+        <!-- NAV BAR AREA -->
+        <div class="mx-20">
+          <div class="navbar bg-red-600 rounded-lg justify-around ">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Home</a></li>
+                  <li><a>About Us</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>All Fruits</a></li>
+                </ul>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-white">
+                  <li><a>Home</a></li>
+                  <li><a>About Us</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+          </div>
+          </div>
+          <div class="flex">
+          <div><img src="./images/logo.png" alt=""></div>
+          <div><a class="text-3xl text-white">FruitBurst</a></div>
+          </div>
+            <!-- Search -->
+            <div class="navbar-end">
+              <form action="/search">
+                <label for="search"></label>
+                <input class="rounded-lg text-3xl" type="text" id="search" name="q" placeholder="Search here">
+              </form>
+            </div>
+          </div>
+        </div>
+    <!-- HEADER AREA END -->
+    <!-- MAIN AREA START -->
+        <div class="mx-20 my-10">
+          <div class="hero min-h-screen" style="background-image: url('./images/banner1.png');">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">Exotic tastes at <br> your doorstep</h1>
+                <p class="mb-5">We supply highly quality organic products.</p>
+                <button class="btn btn-primary">Shop Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    <!-- MAIN AREA END -->
+    <!-- FOOTER AREA START -->
+
+    <!-- FOOTER AREA END -->
 </body>
 </html>
